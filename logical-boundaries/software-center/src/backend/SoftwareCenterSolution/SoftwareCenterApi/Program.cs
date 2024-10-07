@@ -44,7 +44,7 @@ app.UseStaticFiles();
 if (app.Environment.IsDevelopment())
 {
     Console.WriteLine("In Development");
-    app.MapReverseProxy();
+    //app.MapReverseProxy();
     
 }
 app.MapWolverineEndpoints();

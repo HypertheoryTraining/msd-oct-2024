@@ -19,11 +19,5 @@ dev-reset-pg: (dev-pg-down)
 dev-reset-kafka: (dev-kafka-down)
     docker volume rm dev-environment_kafka_data
 
-software-center-backend-run:
+software-center-run:
     cd logical-boundaries/software-center/src/backend/SoftwareCenterSolution/SoftwareCenterApi && dotnet run -- run
-
-software-center-frontend-run:
-    cd logical-boundaries/software-center/src/frontend && npm run dev
-    
-software-center-frontend-install:
-    cd logical-boundaries/software-center/src/frontend && npm ci && npm run build
